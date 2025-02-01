@@ -73,9 +73,11 @@ const isCommentInputTextValid = (inputText) => {
   return !isInvalid;
 };
 
-pristine.addValidator(hashtagInput, isHashtagsInputTextValid, getErrorMessage);
-pristine.addValidator(messageTextarea, isCommentInputTextValid, getErrorMessage);
-//Д21. Поиск элементов по селекторам делается минимальное количество раз, после этого ссылки на элементы сохраняются.
-
-
-export {pristine};
+export {
+  pristine,
+  isHashtagsInputTextValid,
+  isCommentInputTextValid,
+  getErrorMessage,
+  hashtagInput,
+  messageTextarea
+};
